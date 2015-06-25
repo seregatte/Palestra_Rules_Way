@@ -1,0 +1,6 @@
+name = Custom Actions
+description = Parte da palestra explicando actions
+dependencies[] = custom_pages
+dependencies[] = trigger
+core = 7.x
+files[] = tests/custom_actions.test

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Rules feature.
+ */
+
+include_once 'fs_rules.features.inc';

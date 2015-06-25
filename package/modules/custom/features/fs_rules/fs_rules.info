@@ -1,0 +1,13 @@
+name = Rules
+description = Parta da palestra que explica Rules
+core = 7.x
+package = Rules Way
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = rules_admin
+dependencies[] = strongarm
+dependencies[] = fs_global
+dependencies[] = custom_pages
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = site_name

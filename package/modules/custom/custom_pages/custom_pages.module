@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file custom_pages.module
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function custom_pages_menu() {
+  $items = array();
+  
+  $items['administrator'] = array(
+    'title' => 'Landing Page Administrator',
+    'page callback' => '_custom_pages_landing',
+    'page arguments' => array(),
+    'access arguments' => array('access content'),
+    'type' => MENU_LOCAL_TASK 
+  );
+  $items['role1'] = array(
+    'title' => 'Landing Page Role1',
+    'page callback' => '_custom_pages_landing',
+    'page arguments' => array(),
+    'access arguments' => array('access content'),
+    'type' => MENU_LOCAL_TASK 
+  );
+
+  $items['role2'] = array(
+    'title' => 'Landing Page Role2',
+    'page callback' => '_custom_pages_landing',
+    'page arguments' => array(),
+    'access arguments' => array('access content'),
+    'type' => MENU_LOCAL_TASK 
+  );
+
+  return $items;
+}
+
+function _custom_pages_landing(){
+	return 'Landing page de ' . arg(0);
+}

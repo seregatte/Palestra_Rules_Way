@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file custom_hooks.module
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_user_login().
+ */
+function custom_hooks_user_login(&$edit, $account) {
+	if($account->uid == 1){
+		$_GET['destination'] = 'administrator';
+	}else{
+		$_GET['destination'] = end($account->roles);
+	}
+}

@@ -1,0 +1,5 @@
+name = Custom Pages
+description = Paginas para entrada no sistema
+package = Rules Way
+core = 7.x
+files[] = tests/custom_pages.test

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the hooks feature.
+ */
+
+include_once 'fs_hooks.features.inc';

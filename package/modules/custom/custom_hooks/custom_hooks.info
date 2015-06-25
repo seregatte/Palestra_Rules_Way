@@ -1,0 +1,6 @@
+name = Custom Hooks
+description = Parte da palestra que utiliza hooks como exemplo
+package = Rules Way
+dependencies[] = custom_pages
+core = 7.x
+files[] = tests/custom_hooks.test
