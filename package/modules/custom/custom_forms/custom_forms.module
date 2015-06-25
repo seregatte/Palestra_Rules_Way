@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * custom_leagacy.module
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_forms_form_accreditation_media_entityform_edit_form_alter(&$form, &$form_state, $form_id) {
+	global $language;
+
+	if(!preg_match('%entityform%', request_uri())){
+		if(!user_access('edit any entityform')){
+			$form['field_status'][$form['field_status']['#language']]['#access'] = FALSE;
+		}
+	}
+}

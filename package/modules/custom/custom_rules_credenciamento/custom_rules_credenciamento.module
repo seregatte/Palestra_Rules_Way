@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file custom_rules_credenciamento.module
+ * TODO: Enter file description here.
+ */
+
+// Drupal needs this blank file.
+
+function _custom_rules_credenciamento_webservice($webservice, $settings, RulesState $state, RulesPlugin $element){
+	$ws = new WebService();
+	$ws->send($state);
+}

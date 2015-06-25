@@ -1,0 +1,7 @@
+name = Custom Rules Credenciamento
+description = Provide some rules for accreditation approval system
+dependencies[] = rules
+package = Rules Way
+core = 7.x
+files[] = includes/webservice.inc
+files[] = tests/custom_rules_credenciamento.test
